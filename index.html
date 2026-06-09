@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>แบบฟอร์มข้อมูลนักศึกษา</h1>
+    <h2>นางสาวจินตนา สมบัติศรี</h2>
+
+    <form>
+        <!-- Text Box -->
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" name="fullname" required minlength="5">
+
+        <!-- Password -->
+        <label>รหัสผ่าน</label>
+        <input type="password" name="password" required minlength="8">
+
+        <!-- Email -->
+        <label>อีเมล</label>
+        <input type="email" name="68319010010@swdtcmail.com>
+
+        <!-- Radio Button -->
+        <label>เพศ</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="ชาย" required> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+        </div>
+
+        <!-- Checkbox -->
+        <label>ความสนใจ</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="interest" value="เขียนโปรแกรม"> เขียนโปรแกรม
+            <input type="checkbox" name="interest" value="ออกแบบเว็บไซต์"> ออกแบบเว็บไซต์
+            <input type="checkbox" name="interest" value="กราฟิก"> กราฟิก
+        </div>
+
+        <!-- Select -->
+        <label>สาขาวิชา</label>
+        <select required>
+            <option value="">-- เลือกสาขา --</option>
+            <option>เทคโนโลยีสารสนเทศ (IT)</option>
+            <option>คอมพิวเตอร์ธุรกิจ</option>
+            <option>การบัญชี</option>
+        </select>
+
+        <!-- Textarea -->
+        <label>แสดงความคิดเห็น</label>
+        <textarea rows="5" required></textarea>
+
+        <!-- Submit -->
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+</div>
+
+</body>
+</html>
